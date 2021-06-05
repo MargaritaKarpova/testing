@@ -1,0 +1,39 @@
+Посмотреть где я: pwd
+Создать папку:	mkdir  TestFolder
+Зайти в папку:	cd TestFolder
+Создать 3 папки:	mkdir folder1 folder2 folder3
+Зайти в любоую папку:	cd folder1
+Создать 5 файлов (3 txt, 2 json): touch 1.txt 2.txt 3.txt 4.json 5.json
+Создать 3 папки:	mkdir 1 2 3
+Вывести список содержимого папки:	ls -la
+Открыть любой txt файл:	vim 1.txt
+ написать туда что-нибудь, любой текст:	i текст
+ сохранить и выйти:	:wq
+Выйти из папки на уровень выше:	cd ..
+Переместить любые 2 файла, которые вы создали, в любую другую папку:	mv /c/Users/Маргарита/TestFolder/folder1/1.txt 2.txt /c/Users/Маргарита/TestFolder/folder2
+Скопировать любые 2 файла, которые вы создали, в любую другую папку:	cp /c/Users/Маргарита/TestFolder/folder1/1.txt 2.txt /c/Users/Маргарита/TestFolder/folder2
+Найти файл по имени:	find . -name 1.txt
+Просмотреть содержимое в реальном времени (команда grep) изучите как она работает.	
+Вывести несколько первых строк из текстового файла:	head -2 1.txt
+Вывести несколько последних строк из текстового файла:	tail -3 1.txt
+просмотреть содержимое длинного файла (команда less) изучите как она работает:	less 1.txt
+вывести дату и время:	date
+Отправить http запрос на сервер. https://api.quarantine.country/api/v1/regions:	curl --x POST https://api.quarantine.country/api/v1/regions
+
+Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+
+touch myscript.txt 
+vim myscript.txt 
+прописываю в документе через vim 
+#!/bin/bash
+cd TestFolder
+mkdir papka1 papka2 papka3
+cd papka1
+touch one.txt two.txt three.txt four.json five.json
+mkdir one two three
+ls -la
+mv /c/Users/Маргарита/TestFolder/papka1/one.txt two.txt /c/Users/Маргарита/TestFolder/papka2
+chmod +x ./myscript.txt
+./myscript.txt"
+	
+Работала в Git Bash	
