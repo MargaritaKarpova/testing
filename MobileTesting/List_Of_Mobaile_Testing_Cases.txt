@@ -1,0 +1,134 @@
+Кейсы проверок мобильных приложений
+
+1. Проверка установки приложения с нуля.
+2. Проверка запуска приложения.
+3. Проверка удаления приложения.
+4. Проверка повторной установки приложения (после удаления).
+5. Проверка обновления приложения на новую версию (запустить, проверить сохраненные встроенные покупки, авторизацию, дизайн, файлы, прогрессы, контакты и др.).
+6. Проверка платной версии.
+7. Проверка окончания периода оплаты (переход на бесплатный контент).
+8. Проверка главного экрана приложения при открытии.
+9. Проверка работы приложения во время подключения зарядки к устройству.
+10. Проверка работы приложения во время отключения зарядки к устройству.
+11. Проверка работы приложения с наушниками и во время подключения/отключения наушников к устройству.
+12. Проверка работы приложения во время уровня заряда менее 50%.
+13. Проверка работы приложения во время уровня заряда менее 20%.
+14. Проверка работы приложения во время уровня заряда менее 10%.
+15. Проверка работы приложения при прерываниях (входящий звонок/смс/push/будильник/режим «Не беспокоить» и т.д.).
+16. Проверка работы приложения при прерываниях
+17. Проверка работы приложения во время телефонного разговора.
+18. Проверка работы приложения при сворачивании приложения.
+19 Проверка работы приложения при разворачивании приложения.
+20. Проверка работы приложения в фоновом режиме.
+21. Проверка закрытия приложения (кильнуть приложение).
+22. Проверка закрытия приложения из свернутого состояния (свернуть и кильнуть).
+23. Проверка работы приложения в портретной ориентации.
+24. Проверка работы приложения в альбомной ориентации.
+25. Проверка работы приложения при смене ориентации экрана телефона.
+26. Проверка закрытия приложения из разных ориентациях экрана телефона.
+27. Проверка работы приложения по Wi-Fi.
+28. Проверка работы приложения по мобильному интернету.
+29. Проверка работы приложения при переподключении с мобильного интернета на  Wi-Fi.
+30. Проверка работы приложения при переподключении с Wi-Fi на  мобильный интернет.
+31. Проверка работы приложения при прерывании интернета.
+32. Проверка работы приложения при переключении с E на 3G, с 3G на 4G, с 4G на 5G и обратно.
+33. Проверка работы приложения при извлечении SIM-карты.
+34. Проверка работы приложения при извлечении карты памяти.
+35. Проверка работы приложения при подключении SIM-карты.
+36. Проверка работы приложения при подключении карты памяти.
+37. Проверка работы приложения в различных разрешениях экрана.
+38. Проверка работы приложения при включении/отключении GPS.
+39. Проверка работы приложения при темной/светлой и других тем телефона.
+40. Проверка работы приложения большом количестве взаимодействий пользователя с приложением.
+
+
+
+iOS Human Interface Guidelines
+
+1. Launching: 
+1) provide a launch screen;
+2) launch in the appropriate orientation; 
+3) avoid asking for setup information up front;
+4) avoid asking people to rate your app too quickly or too often. 
+
+2. Onboarding:
+1) provide onboarding that helps people enjoy your app, not just set it up;
+2) get to the action quickly;
+3) make learning fun and discoverable;
+4) anticipate the need for help. 
+
+3. Loading:
+1) make it clear when loading is occurring;
+2) show content as soon as possible;
+3) educate or entertain people to mask loading time;
+4) customize loading screens. 
+
+4. Modality (requires an explicit action to exit):
+1) use modality when it makes sense;
+2) reserve alerts for delivering essential — and ideally actionable — information;
+3) keep modal tasks simple, short, and narrowly focused;
+4) always include a button that dismisses the modal view. 
+
+5. Navigation:
+1) design an information structure that makes it fast and easy to get to content;
+2) use touch gestures to create fluidity;
+3) use standard navigation components;
+4) use a navigation bar to traverse a hierarchy of data.
+
+6. Accessing User Data and Resources:
+1) request permission only when your app clearly needs access to the data or resource;
+2) request permission at launch only when the data or resource is necessary for your app to function;
+3) write copy that clearly describes how your app uses the data or resource you’re requesting.
+
+7. Settings:
+infer what you can from the system;
+1) thoughtfully prioritize configuration options within your app;
+2) expose infrequently changed configuration options in Settings;
+3) provide shortcuts to Settings when appropriate. 
+
+8. Custom Icons:
+1) create simple, recognizable designs;
+2) design a solid color icon with transparency, antialiasing, and no drop shadow;
+3) distinguish your custom icon from the system icons;
+4) keep your icons consistent. 
+
+9. Navigation Bars:
+1) avoid crowding a navigation bar with too many controls;
+2) don’t include multisegment breadcrumb paths;
+3) give text-titled buttons enough room;
+4) consider temporarily hiding the navigation bar when displaying full-screen content. 
+
+10. Multitasking:
+1) be prepared for interruptions, and be ready to resume;
+2) make sure your interface works with a double-high status bar.
+3) pause activity that requires attention or active participation.
+4) respond appropriately to external audio.
+
+
+
+
+
+Material design guidelines (Android Guidelines):
+
+Material is an adaptable system of guidelines, components, and tools that support the best practices of user interface design.
+
+1. Навигация. Основываясь на информационной архитектуре приложения, пользователь может перемещаться в одном из трех навигационных направлений: Боковая навигация, Прямая навигация, Обратная навигация.
+
+2. Свет и тень. все элементы отбрасывают тени, когда на них падает свет. Всего источников 2: основной и общий свет. По этой причине у элементов 2 тени: основная и общая тень.
+
+3. Работа над макетом. Принципы: предсказуемость, консистентность, отзывчивость. Все макеты должны быть визуально сбалансированными.
+
+4. Отступы. Работа с пространством осуществляется за счет базовой сетки, направляющих, прогрессивной шкалы отступов, работы с соотношением сторон, контейнеров и областью нажатий.
+5. Поиск.
+1) Если поиск в приложение — это основное действие и сценарий, то показывайте его всегда поиск. Текстовое поле поиска в этом случае будет находиться внутри панели.
+2) Раскрывающийся поиск. Используй раскрывающийся поиск, если поиск не является основным сценарием приложения. Раскрывающийся поиск отображается как значок лупы на панели приложения вместо полного текстового поля поиска.
+
+6. Цвет. Руководство по цвету Материал позволяет применять цвет для интерфейса осмысленно. Изначально надо выбрать основной и второстепенный цвета, которые отображают ваш бренд. Затем темные и светлые оттенки каждого цвета можно применять к интерфейсу так, как вам угодно. 
+
+7. Разборчивость текста. Стандарты читаемости.Текст должен быть разборчивым и соответствовать стандартам по доступности. Согласно руководству по доступности веб-контента уровня АА (WCAG 2.0) — уровень контраста между текстом и фоном в дизайне должен соответствовать 4:5:1 значению для большого текста.
+
+8. Типографика. Material Design включает в себя ряд заготовленных стилей для типографики, которые могут помочь оформить продукт и контент.
+
+9. Типы языков. Чтобы корректно отображался интерфейс на разных языках, может понадобиться использовать несколько шрифтов в одном приложении. Системы письма Google делит на три типа: английский, высокий и плотный.
+
+10. Коммуникация: Онбординг. Онбординг должен иметь конкретные цели, которые будут соответствовать тому, как вы хотите познакомить пользователя с приложением.Существует три модели онбординга: помоги себе сам, быстрый старт, топ фичи.
